@@ -14,3 +14,9 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.bar-button-clear-ios, .bar-button-default.bar-button-ios-clear, .bar-button-clear-ios-clear,
+.bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default
+{
+    color: #222;
+}

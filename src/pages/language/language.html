@@ -1,0 +1,50 @@
+<!--
+  Generated template for the LanguagePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>多语言</ion-title>
+
+        <ion-buttons end>
+            <button ion-button (click)="save()">
+                <span>保存</span>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+
+
+
+</ion-header>
+
+
+<ion-content>
+    <form [formGroup]="langForm">
+        <ion-list radio-group formControlName="langs">
+            <ion-item>
+                <ion-label>跟随系统</ion-label>
+                <ion-radio checked="true" value="auto"></ion-radio>
+            </ion-item>
+            <ion-item>
+                <ion-label>简体中文</ion-label>
+                <ion-radio value="zh-cn"></ion-radio>
+            </ion-item>
+            <ion-item>
+                <ion-label>繁体中文（台湾）</ion-label>
+                <ion-radio value="zh-tw"></ion-radio>
+            </ion-item>
+            <ion-item>
+                <ion-label>繁体中文（香港）</ion-label>
+                <ion-radio value="zh-hk"></ion-radio>
+            </ion-item>
+            <ion-item>
+                <ion-label>English</ion-label>
+                <ion-radio value="en-us"></ion-radio>
+            </ion-item>
+        </ion-list>
+    </form>
+
+</ion-content>

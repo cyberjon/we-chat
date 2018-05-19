@@ -1,0 +1,31 @@
+page-ensure {
+    .toolbar-background-ios{
+        background-color: white;
+
+    }
+
+    .header-ios .toolbar-ios:last-child .toolbar-background-ios{
+        border-bottom-width: 0;
+    }
+
+    .list-ios{
+        margin: 0;
+    }
+
+    .list-ios > .item-block:first-child{
+        border-top: none
+    }
+
+    .list-ios > .item-block:last-child{
+        border-bottom: none;
+    }
+
+    .list-ios > .item-block:last-child .item-inner, .list-ios > .item-wrapper:last-child .item-block .item-inner {
+        border-bottom: 0.25px solid #c8c7cc;
+    }
+
+    .login-title{
+        font-size: 28px;
+        font-weight: 500;
+    }
+}

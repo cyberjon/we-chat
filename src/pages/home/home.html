@@ -1,14 +1,32 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>
+            微聊
+        </ion-title>
+    </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+
+    <ion-list>
+        <ion-item-sliding *ngFor="let item of list">
+            <ion-item>
+                <ion-avatar item-start>
+                    <img [src]="item.avatar">
+                </ion-avatar>
+                <h2>{{item.name}}</h2>
+                <p>{{item.message}}</p>
+                <ion-note item-end>{{item.time}}</ion-note>
+            </ion-item>
+            <ion-item-options side="right">
+                <button ion-button color="primary">
+                    标为未读
+                </button>
+                <button ion-button color="danger">
+                    删除
+                </button>
+            </ion-item-options>
+        </ion-item-sliding>
+    </ion-list>
 </ion-content>

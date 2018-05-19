@@ -1,0 +1,28 @@
+page-loader {
+
+    .footer-ios .toolbar-background-ios,
+    .header-ios .toolbar-background-ios{
+        background-color: #020202;
+    }
+
+    .lang{
+        color:white;
+    }
+
+    .content-ios{
+        background-image: url('../../assets/imgs/loader.JPEG') !important;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .col:first-child{
+        text-align: left;
+    }
+
+    .col:last-child{
+        text-align: right;
+    }
+
+}

@@ -1,3 +1,16 @@
 page-home {
+    .header-ios .toolbar-background-ios, .footer-ios .toolbar-background-ios {
+        //background-color: #222222c9;
+        background-color: #343434;
+    }
 
+    .toolbar-title-ios{
+        color: #ffffff;
+    }
+
+    ion-note {
+        font-size: 12px;
+        align-self: flex-start;
+        margin-top: 14px;
+    }
 }
